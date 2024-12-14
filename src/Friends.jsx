@@ -6,9 +6,11 @@ const Friends = () => {
   const [isShow, setIsShow] = useState(false);
 
   const getData = async() => {
-    const response = await fetch("http://localhost:5000/data");
+    const response = await fetch("https://my-json-server.typicode.com/SanginJeong/pbl-project/data");
     const data = await response.json();
-    const sortedList = data.sort((a,b)=>b.frequency - a.frequency);
+    console.log(data);
+    
+    const sortedList = data?.sort((a,b)=>b.frequency - a.frequency);
     console.log(sortedList);
     
     if(isShow){
