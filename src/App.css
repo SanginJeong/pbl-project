@@ -1,0 +1,76 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.greycolor{
+  background-color: grey;
+}
+.more{
+  text-align: center;
+}
+.more-btn{
+  background-color: grey;
+  border-radius: none;
+  padding: 10px;
+  font-size: 16px;
+  background: none;
+  margin-bottom: 20px;
+}
+.background {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.start_btn_area{
+  text-align: center;
+}
+button{
+  padding: 18px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+.start-btn{
+  transition: transform 0.3s ease-in-out;
+  animation: resizeAnimation 2s infinite;
+}
+
+.friend-btn{
+  padding: 10px;
+  font-size: 16px;
+}
+
+.user-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 110px;
+  padding: 10px;
+}
+
+@keyframes resizeAnimation {
+  0%, 100% {
+    transform: scale(1); /* 기본 크기 */
+  }
+  50% {
+    transform: scale(1.2); /* 커진 크기 */
+  }
+}
+
+.start-btn:hover {
+  background-color: #0056b3;
+}
+
+.friends-area{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
